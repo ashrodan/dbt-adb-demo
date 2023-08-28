@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: tpch
+    catalog: samples
+    schema: tpch
+    tables: 
+      - name: lineitem
+        description: Line items on samples
+      - name: partsupp
+      - name: part
+      - name: supplier

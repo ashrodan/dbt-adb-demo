@@ -1,0 +1,28 @@
+[0m09:32:02.533688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107302110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107311bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107312310>]}
+
+
+============================== 09:32:02.553101 | e503c198-0167-48ad-a381-0408d7cd2fe6 ==============================
+[0m09:32:02.553101 [info ] [MainThread]: Running with dbt=1.6.1
+[0m09:32:02.553749 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/ash/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:32:19.589852 [debug] [MainThread]: Starter project path: /Users/ash/dev/dbt-adb-demo/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m09:32:19.600364 [info ] [MainThread]: 
+Your new dbt project "dbt_adb_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:32:19.600943 [info ] [MainThread]: Setting up your profile.
+[0m09:40:28.508667 [info ] [MainThread]: Profile dbt_adb_demo written to /Users/ash/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:40:28.521808 [debug] [MainThread]: Command `dbt init` succeeded at 09:40:28.520837 after 506.05 seconds
+[0m09:40:28.522752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10086fa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1008c6f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1008c6f90>]}
+[0m09:40:28.524207 [debug] [MainThread]: Flushing usage events
