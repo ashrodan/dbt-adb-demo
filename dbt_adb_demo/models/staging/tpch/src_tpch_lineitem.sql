@@ -6,6 +6,7 @@ with source as (
 , final as (
 
     select 
+        l_orderkey as orderkey,
         l_partkey as partkey, 
         l_suppkey as suppkey
     from source

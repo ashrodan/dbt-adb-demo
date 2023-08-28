@@ -6,7 +6,7 @@ with source as (
 , final as (
 
     select 
-        s_suppkey as supp_key, 
+        s_suppkey as suppkey, 
         s_name as supp_name
     from source
 

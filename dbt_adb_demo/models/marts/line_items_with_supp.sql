@@ -27,6 +27,8 @@ with lineitem as (
     select *
     from lineitem
     left join part_supp using(partkey, suppkey)
+    left join part using(partkey)
+    left join supplier using(suppkey)
 
 )
 

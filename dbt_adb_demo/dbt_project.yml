@@ -33,3 +33,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_adb_demo:
     +materialized: table
+
