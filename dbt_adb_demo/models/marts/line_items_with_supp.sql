@@ -24,7 +24,8 @@ with lineitem as (
 
 , final as (
 
-    select *
+    select partkey || '-' || suppkey || '-' || orderkey as _id 
+        , *
     from lineitem
     left join part_supp using(partkey, suppkey)
     left join part using(partkey)

@@ -8,7 +8,8 @@ with source as (
     select 
         l_orderkey as orderkey,
         l_partkey as partkey, 
-        l_suppkey as suppkey
+        l_suppkey as suppkey,
+        l_shipdate as shipdate
     from source
 
 )

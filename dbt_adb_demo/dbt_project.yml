@@ -32,5 +32,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_adb_demo:
-    +materialized: table
+    +file_format: delta
+
+    
+    marts:
+      +materialized: view
+
+    staging:
+      +materialized: table
 
