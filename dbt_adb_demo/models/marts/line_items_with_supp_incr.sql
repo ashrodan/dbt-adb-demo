@@ -1,7 +1,6 @@
 
 {{ config(
     materialized='incremental',
-    file_format='delta',
     unique_key='_id',
     incremental_strategy='merge'
 ) }}
