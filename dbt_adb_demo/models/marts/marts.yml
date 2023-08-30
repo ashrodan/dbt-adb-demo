@@ -2,6 +2,9 @@ version: 2
 
 models:
   - name: line_items_with_supp
+    config:
+        grants:
+          select: ['Init_Group']
     tests:
         - unique:
             column_name: "(partkey || '-' || suppkey || '-' || orderkey)"

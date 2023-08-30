@@ -24,6 +24,9 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+vars:
+  start_date: '2016-06-01'
+  top_limit: 5  
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -31,13 +34,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
+  +file_format: delta
+
   dbt_adb_demo:
-    +file_format: delta
 
-    
     marts:
-      +materialized: view
-
+      schema: dbt_adb_demo_mart
+      
     staging:
       +materialized: table
 
